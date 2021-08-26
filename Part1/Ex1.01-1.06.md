@@ -49,5 +49,10 @@ Searching..
 </body></html>
 ```
 
-### 1.05
-
+### 1.06
+```
+docker run -it devopsdockeruh/pull_exercise
+Give me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
+```
