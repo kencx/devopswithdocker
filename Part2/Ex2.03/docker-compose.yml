@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    frontend:
+      image: front-end:v2
+
+    backend:
+      image: back-end:v2
+
+
