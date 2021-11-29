@@ -2,7 +2,7 @@ FROM node:14
 RUN node -v && npm -v
 
 EXPOSE 5000
-ENV REACT_APP_BACKEND_URL=http://localhost:8080
+ENV REACT_APP_BACKEND_URL=http://localhost:1234
 WORKDIR /usr/src/app
 COPY . .
 

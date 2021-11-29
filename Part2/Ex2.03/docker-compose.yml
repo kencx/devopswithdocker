@@ -1,13 +1,11 @@
 version: '3'
 
 services:
-    frontend:
-      image: front-end:v2
-      ports:
-        - 5000:5000
-    backend:
-      image: back-end:v2
-      ports:
-        - 8080:8080
-
-
+  frontend:
+    image: front-end
+    ports:
+      - 5000:5000
+  backend:
+    image: back-end
+    ports:
+      - 1234:8080

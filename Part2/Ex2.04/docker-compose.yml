@@ -1,18 +1,19 @@
 version: '3'
 
 services:
-    frontend:
-      image: front-end:v2
-      ports: 
-        - 5000:5000
+  frontend:
+    image: front-end
+    ports:
+      - 5000:5000
 
-    backend:
-      image: back-end:v2
-      environment:
-        - REDIS_HOST=redis-server
-      ports:
-        - 8080:8080
+  backend:
+    image: back-end
+    environment:
+      - REDIS_HOST=redis-server
+    ports:
+      - 1234:8080
 
-    redis:
-      image: redis
-      container_name: redis-server
+  redis:
+    image: redis
+    container_name: redis-server
+    restart: unless-stopped
