@@ -1,3 +1,3 @@
 ```
-docker run --rm -v 8080:8080 web-server
+docker run --rm -p 8080:8080 web-server
 ```

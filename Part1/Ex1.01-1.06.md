@@ -49,6 +49,20 @@ Searching..
 </body></html>
 ```
 
+### 1.05
+```
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   8 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   8 months ago   15.7MB
+```
+
+Launch alpine container and attach with
+```
+docker run -it -d devopsdockeruh/simple-web-service:alpine --name alpine
+docker exec -it alpine sh
+```
+
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
 ### 1.06
 ```
 docker run -it devopsdockeruh/pull_exercise
